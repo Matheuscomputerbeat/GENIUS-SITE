@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#score, #round {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+#green {
+    background-color: #00ff00;
+}
+
+#red {
+    background-color: #ff0000;
+}
+
+#yellow {
+    background-color: #ffff00;
+}
+
+#blue {
+    background-color: #0000ff;
+}
+
+/* Adicione esta classe para estilizar a cor quando ativa */
+.active {
+    filter: grayscale(100%);
+}
+
+#start-button,
+#restart-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    cursor: pointer;
+}
